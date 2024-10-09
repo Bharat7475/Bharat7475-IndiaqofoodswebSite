@@ -1,0 +1,89 @@
+
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+
+    
+    #containerElement #element:nth-last-of-type(-n+3) {
+
+        margin-left: 15px;
+    }
+    .productItem06 .product_content04 {
+        padding-left: 28px;
+        padding-right: 20px;
+        padding: 87px 50px;
+    }
+    #mybtnclass2nd {
+        display: none !important;
+    }
+
+    #mybtnclass1st {
+        display: block !important;
+    }
+
+    #btnClass1st {
+        display: none !important;
+    }
+
+    #btnClass2nd {
+        display: block !important;
+    }
+
+    .mainMenu ul li a {
+        font-size: 18px;
+        color: #3e4b5f;
+        display: block;
+        font-weight: 800;
+        position: relative;
+        z-index: 2;
+        padding: 0 4px;
+        line-height: .8;
+        text-transform: capitalize;
+    }
+
+    .owl-stage {
+        /* margin-left:56px; */
+    }
+
+    .categoryBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    .categoryBox {
+
+
+        display: block;
+        position: relative;
+        border-radius: 10px;
+        background: #fafdf6;
+        /* padding: 10px 15px; */
+        text-align: center;
+        width: 110px;
+        transition: all ease 300ms;
+        -moz-transition: all ease 300ms;
+        -webkit-transition: all ease 300ms;
+    }
+
+    .categoryBox:hover {
+        background: var(--theme-color);
+        font-size: 20px;
+        color: #000;
+    }
+
+    .categoryBox img {
+        height: 40px;
+        width: auto !important;
+        margin: 0 0 25px;
+        display: inline-block !important;
+    }
+
+    .categoryBox h4 {
+        font-size: 17px;
+        font-weight: 800;
+        line-height: 27px;
+        margin: 0 0 2px;
+    }
+
+    .mainMenu ul li a {
+        font-size: 15px;
+    }
+  }

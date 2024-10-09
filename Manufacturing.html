@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Capabilities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/themewar-font.css" />
+    <!-- <link rel="stylesheet" href="assets/css/organio-icon.css" /> -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/lightcase.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
+    <link rel="stylesheet" href="assets/css/preset.css" />
+    <link rel="stylesheet" href="assets/css/ignore_for_wp.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            margin: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slider {
+            margin: 0 auto;
+            /* height: 720px; */
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 400%;
+             height: 400px; 
+            display: flex;
+        }
+
+        .slides input {
+            display: none;
+        }
+
+        .slide {
+            width: 25%;
+            position: relative;
+            transition: 1s;
+        }
+
+        .slide img {
+            width: 800px;
+        }
+
+        .manual-btn {
+
+            border: 2px solid #130202;
+            padding: 7px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .manual-btn:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        .manual-btn:hover {
+            background-color: #0e0101;
+        }
+
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+
+        #radio2:checked~.first {
+            margin-left: -25%;
+        }
+
+        #radio3:checked~.first {
+            margin-left: -50%;
+        }
+
+        .navegacao-auto div {
+            border: 2px solid #20acff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .navegacao-auto {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            display: none;
+        }
+
+        .navegacao-auto div:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        #radio1:checked~.navegacao-auto .auto-btn1 {
+            background-color: #110101;
+        }
+
+        #radio2:checked~.navegacao-auto .auto-btn2 {
+            background-color: #090101;
+        }
+
+        #radio3:checked~.navegacao-auto .auto-btn3 {
+            background-color: #0c0101;
+        }
+
+        #manu-center {
+            /* text-align: center; */
+            font-size: 34px;
+            padding-left: 10px;
+        }
+
+        #manu-center-1 {
+            font-size: 32px;
+            padding-left: 3px;
+
+        }
+
+        img {
+            border-radius: 40px;
+        }
+
+        #rev-div div1,
+        div2 {
+
+            padding: 10px 0px;
+        }
+
+        .manual-navegacao {
+            position: absolute;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+      @media (min-width:1599px){
+        #storage-img {
+                border-radius: 42px;
+                height: 70%;
+            }
+      }
+        
+        @media (min-width: 1700px) and (max-width: 3300px) {
+   
+    
+            .manual-btn {
+           
+            padding: 11px;
+           
+        }
+            .slider {
+                height: 400px;
+                
+            }
+            #storage-img {
+                border-radius: 25px;
+                height: 75%;
+            }
+           
+            .manual-navegacao {
+            position: absolute;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+      
+
+        @media (min-width:320px) and (max-width:768px) {
+
+            #mar-scroll{
+            padding: 0px 0px;
+        }
+          
+            #div1 {
+                order: 2;
+            }
+
+            /* .slider {
+                margin: 0 auto;
+                height: 640px;
+                overflow: hidden;
+            } */
+
+            .slide img {
+                width: 350px;
+            }
+
+            .manual-navegacao {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            #manu-center {
+                /* text-align: center; */
+                font-size: 28px;
+            }
+
+        }
+    }
+    </style>
+</head>
+
+<body class="innerPage">
+
+    <header class="header01">
+        <div class=" container largeContainer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="navBar01 fixed-top">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo_IndiaQo_White.jpg" alt="Dgita"></a>
+                        </div>
+                        <nav class="mainMenu">
+                            <ul>
+                                <li><a href=" index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="Product.html">Products</a></li>
+                                <li><a href="Quality.html">Quality</a></li>
+                                <li><a class="active border-1 bg-success p-lg-2 rounded text-white" aria-selected="true"
+                                        data-toggle="tab" role="tab" href="Manufacturing.html">Manufacturing</a></li>
+                                <li><a href="STORAGE-And-PACKAGING.html">Storage</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <!--<li><a href="Blog.html">Blog</a></li>-->
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="accessNav">
+                            <a href="javascript:void(0);" class="menuToggler"><i class="twi-bars1"></i></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <section class="sidebarMenu">
+        <div class="sidebarMenuOverlay"></div>
+        <div class="SMArea">
+            <div class="SMAHeader">
+                <h3>
+                    <i class="twi-bars1"></i> Menu
+                </h3>
+                <a href="javascript:void(0);" class="SMACloser"><i class="twi-times2"></i></a>
+            </div>
+            <div class="SMABody">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Quality.html">Quality</a></li>
+                    <li><a class=" active border-1 bg-success p-lg-2 rounded text-white" aria-selected="true"
+                            data-toggle="tab" role="tab" href="Manufacturing.html">Manufacturing</a></li>
+                    <li><a href="STORAGE-And-PACKAGING.html">Storage</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <!--<li><a href="Blog.html">Blog</a></li>-->
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="page_banner" style="background-image: url(assets/images/bg/d1.jpg);">
+        <div style="position: absolute; background: rgb(83 178 78 / 40%);width: 100%;height: 100%;top:0;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="margin-top: 50px;">
+                    <h2 class="banner-title " style="color: #fff;">Manufacturing </h2>
+                    <!-- <h4>where Manufacturing meets convenience.</h4> -->
+                    <!-- <p class="breadcrumbs">
+        <a href="index.html"><i class="twi-home"></i>Home</a><i class="twi-angle-right"></i>About Page
+        </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--updated by swap-->
+    <!--updated by swap-->
+    <section class="Sec-p-align">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!--Radio Buttons-->
+                <!--Fim Radio Buttons-->
+
+                <!--Slides em imagens-->
+                <div class="slide first">
+
+                    <div class="container-fluid p-3">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 " id="mar-scroll">
+                                <h3 class="ml-2 " id="manu-center-1" >Customer-Centric Approach</h3>
+                                <div class="d-flex justify-content-center ">
+                                <p style="text-align: justify;">
+                                    
+                                    Our customer-centric approach focuses on understanding and meeting your needs
+                                    through proactive engagement and attentive listening. Open communication channels
+                                    ensure your feedback is valued, driving our commitment to adaptability and
+                                    flexibility. Our dedicated team strives to exceed expectations, fostering
+                                    long-lasting partnerships. Guided by your satisfaction, we aim to be your trusted
+                                    partner, delivering exceptional experiences to your customers. This unwavering
+                                    dedication to your needs positions us as a reliable ally in achieving mutual
+                                    success.
+                                </p></div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img class=" w-100" id="storage-img"
+                                src="assets/images/Web-Images/Manufacturing/Customer-cementric-01.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide">
+
+                    <div class="container-fluid p-3">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6" id="mar-scroll">
+                                <h3 class="ml-2" id="manu-center-1">Innovation and Collaboration</h3>
+                                <p style="text-align: justify;">
+                                    Our innovation team is committed to enhancing product performance, focusing on
+                                    functional and nutritional targets. We embrace collaboration, pushing the boundaries
+                                    of creativity to introduce new flavors and formats. Through strategic partnerships,
+                                    we adopt fresh ideas, fostering a culture of innovation that advances the frozen
+                                    food industry. Our efforts result in innovative products that not only meet but
+                                    exceed consumer expectations, providing options that are both convenient and
+                                    nutritious, without compromising on taste.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img class=" w-100" id="storage-img"
+                                src="assets/images/Web-Images/Manufacturing/Innovation & collabration.JPG">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slide">
+
+                    <div class="container-fluid p-3">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6" id="mar-scroll">
+                                <h3 class="ml-2 " id="manu-center-1">Processing and Distribution</h3>
+                                <p style="text-align: justify;">
+                                    At every stage, our processing and distribution operations in the frozen food
+                                    industry prioritize premium quality. Leveraging cutting-edge technologies and
+                                    stringent quality control, we maintain freshness and taste. Integrity and quality
+                                    are paramount from ingredient selection to freezing techniques. Our strategically
+                                    designed distribution networks guarantee timely availability and optimal storage.
+                                    With streamlined operations, we prioritize customer satisfaction by minimizing lead
+                                    times, delivering convenience and flavor with excellence.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <img class=" w-100" id="storage-img"        `                                               `           q   
+                                    src="assets/images/Web-Images/Manufacturing/pro.jpg">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="manual-navegacao">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </section>
+
+
+    <section class="mt-lg-5">
+        <div class="container-fluid largeContainer mt-4">
+            <div class="row" id="rev-div">
+                <div class="col-lg-6 col-md-6 " id="div1">
+                    <img src="assets/images/Web-Images/Manufacturing/JBT MACHINE.jpg" alt id="border-img" class="mt-4">
+                </div>
+                <div class="col-lg-6 col-md-6" id="div2">
+
+                    <h3 class=" mt-3 mb-3" id="manu-center">JBT IQF Machine</h3>
+
+                    <p id="justify-text">
+                        The JBT IQF Machine revolutionizes frozen food production with its advanced freezing
+                        technology, ensuring rapid and precise freezing of food products while preserving quality.
+                        Its innovative design prevents ice crystal formation, maintaining natural texture and
+                        flavor. Customizable settings and automated controls offer versatility and reliability for
+                        various products and production needs. Trusted by leading food processors worldwide, the JBT
+                        IQF Machine consistently delivers superior results, meeting consumer expectations for taste,
+                        texture, and convenience. It sets the standard for excellence in frozen food production,
+                        driving innovation and efficiency in the industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offerSection01 ">
+        <div class="container-fluid largeContainer">
+            <div class="row" id="rev-div">
+                <div class="col-lg-6 col-md-6 ">
+                    <!-- <div class="subTitle sbsm">Organic 100% genuine product served</div> -->
+                    <h3 class=" mt-3 mb-3" id="manu-center">Frozen Vegetables Processing Plant</h3>
+
+                    <p style="text-align: justify;">Our innovative processing plant preserves nature's bounty with
+                        cutting-edge technology, transforming freshly harvested vegetables into premium frozen
+                        products. With state-of-the-art machinery and strict quality control, we lock in flavors and
+                        nutrients, ensuring optimal taste and texture. Committed to sustainability, we minimize
+                        waste and energy use while upholding the highest food safety standards. From sorting to
+                        freezing, each step is meticulously executed. Trusted by retailers, food service providers,
+                        and consumers, we offer wholesome and convenient frozen vegetable options for every meal.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img class="pl-3 mt-lg-4" src="assets/images/Web-Images/Manufacturing/Frozen Vegetable Processing Plant.JPG"
+                    id="border-img" alt>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offerSection01 ">
+        <div class="container-fluid largeContainer">
+            <div class="row" id="rev-div">
+                <div class="col-lg-6 col-md-6 mt-lg-4" id="div1">
+                    <img id="border-img" src="assets/images/Web-Images/Manufacturing/blast-freezer.jpeg" >
+                </div>
+                <div class="col-lg-6 col-md-6" id="div2">
+                    <!-- <div class="subTitle sbsm">Organic 100% genuine product served</div> -->
+                    <h3 class=" mt-3 mb-3" id="manu-center">Blast Freezer</h3>
+
+                    <p style="text-align: justify;">Our plant is equipped with a state-of-the-art Blast Freezer
+                        boasting a capacity of 2 metric tons per batch. This cutting-edge freezer is capable of
+                        rapidly freezing various products such as Corn on Cob, fruit slices, and more. With a
+                        remarkable output of up to 10 tons per day, it ensures efficient and timely freezing of our
+                        high-quality produce. Our manufacturing processes are meticulously managed through an
+                        advanced online Lab, which enables real-time monitoring and control of both raw ingredients
+                        and processed frozen foods. This ensures that every product meets our stringent quality
+                        standards, delivering freshness and flavor with every bite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offerProduct01" style="margin-top: 100px;">
+        <div class="SecLayerimg move_anim">
+            <img src="assets/images/bg/s1.png" alt>
+        </div>
+        <div class="container largeContainer">
+            <div class="row">
+                <div class="col-lg-12" style="text-align: center;">
+                    <div class="subTitle">Lets Collaborate</div>
+                    <h2 class="secTitle">From Freezer to Feast <br></h2>
+                    <h4 style="    margin-top: -30px;color: #ddd;">Explore Our Frozen Delights Today!</h4>
+                    <!-- <div class="timerTitle"><i class="twi-clock"></i>Grab The Offer</div>
+<div class="countdown_dashboard commoncount white text-left clearfix" data-day="12" data-month="12" data-year="2022"></div> -->
+                    <!-- <a href="contact.html" class="organ_btn smbtn">Contact Us<i class="twi-arrow-right1"></i></a> -->
+
+                    <a href=https://www.youtube.com/embed/Pc4JEv29jZc class="organ_btn smbtn popup_video ">Watch
+                        Video<i class="twi-play1"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="SecLayerimg2 move_anim">
+            <img src="assets/images/bg/s1.png" alt>
+        </div>
+    </section>
+
+
+    <footer class="footer_01 withmailchimp">
+        <div class="container largeContainer">
+
+            <div class="row">
+                <div class="col-md-7 col-lg-4 fborder">
+                    <div class="widget contact_widget">
+                        <div class="contactbox">
+                            <i class="twi-envelope-open-text2"></i>
+                            <h5>Email</h5>
+                            <p><a href="mailto:info@indiaqofoods.com">info@indiaqofoods.com</a></p>
+                        </div>
+                        <div class="contactbox">
+                            <i class="twi-phone-volume2"></i>
+                            <h5>Phone</h5>
+                            <p>+91 20-6727-2233</p>
+                        </div>
+
+                        <div class="contactbox">
+                            <i class="twi-map-marked-alt2"></i>
+                            <h5>Address</h5>
+                            <p style="text-align: start; font-size: 14px;">
+                                IndiaQo Foods Private Limited<br>
+                                Office No. 209 & 210, 2nd Floor,<br>
+                                Apex Tower, Beside Amanora Mall,<br>
+                                Amanora Magarpatta Road,<br>
+                                Hadapsar, Pune 411028 <br>
+                                Maharashtra, INDIA
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 fborder">
+                    <div class="widget">
+                        <div class="aboutWidget">
+                            <a href="index.html"><img src="assets/images/logo_IndiaQo_trans.png" alt /></a>
+                            <p style="text-align: start; font-size: 14px;" class="te">IndiaQo Foods Pvt Ltd is a
+                                full-service company providing a consistent,
+                                year-round supply of superior frozen sweet corn and diced vegetables for retail,
+                                food Services and industrial customers.</p>
+                            <div class="abSocial">
+                                <a href="https://www.linkedin.com/in/IndiaQo-foods/"><i class="twi-linkedin-in"></i></a>
+                                <a href="http://www.youtube.com/@IndiaQofoodsPvtLtd"><i class="twi-youtube"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61556315766453"><i
+                                        class="twi-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="widget service_widget">
+                        <h3 class="widget_title">Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Product.html">Products</a></li>
+                            <li><a href="Quality.html">Quality</a></li>
+                            <li><a href="Manufacturing.html">Manufacturing </a></li>
+                            <li><a href="STORAGE-And-PACKAGING.html">Storage</a></li>
+                            <li><a href="Gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <!-- <ul>
+    <li><a href="javascript:void(0);">Help & FAQ</a></li>
+    <li><a href="javascript:void(0);">Warranty & Repair</a></li>
+    <li><a href="javascript:void(0);">My Account</a></li>
+    <li><a href="javascript:void(0);">Shopping cart</a></li>
+    </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="fdivider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        <p>© Copyright 2024 by <a href="#">IndiaQo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="javascript:void(0);" id="backtotop"><i class="twi-arrow-to-top1"></i></a>
+
+
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.plugin.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/owl.carousel.filter.js"></script>
+    <script src="assets/js/shuffle.min.js"></script>
+    <script src="assets/js/masonry.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/gmaps.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyBJtPMZ_LWZKuHTLq5o08KSncQufIhPU3o"></script>
+
+    <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+    <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="assets/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <script>
+        let count = 1;
+        document.getElementById("radio1").checked = true;
+
+        setInterval(function () {
+            nextImage();
+        }, 30000); // Changes the image every 30 seconds
+
+        function nextImage() {
+            count--;
+            if (count < 1) { // Loop back to the last image if we go back past the first one
+                count = 3;
+            }
+            document.getElementById("radio" + count).checked = true;
+        }
+
+        function prevImage() {
+            count++;
+            if (count > 3) {
+                count = --1;
+            }
+            document.getElementById("radio" + count).checked = true;
+        }
+    </script>
+
+
+
+</body>
+</html>
